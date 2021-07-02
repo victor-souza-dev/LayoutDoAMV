@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 7</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="halfmoon-1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div id="conteiner">
+    <header id="header">
+      <nav id="banner">
+        <aside id="sideBarDiv">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+
+          <div class="sidebar">
+            <h4>Wild Bears</h4>
+            <ul>
+              <li><a href="#"><i class="fas fa-qrcode"></i>Painel de Controle</a></li>
+              <li><a href="#"><i class="fas fa-link"></i>Atalhos</a></li>
+              <li><a href="#"><i class="fas fa-stream"></i>Visão Geral</a></li>
+              <li><a href="#"><i class="fas fa-calendar-week"></i>Eventos</a></li>
+              <li><a href="#"><i class="far fa-question-circle"></i>Sobre</a></li>
+              <li><a href="#"><i class="fas fa-sliders-h"></i>Serviços</a></li>
+              <li><a href="#"><i class="far fa-envelope"></i>Contato</a></li>
+            </ul>
+          </div>
+        </aside>
+
+          <!----------------------------------------------------------------------->
+
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#">PÁGINA INICIAL
+            </li></a>
+            <li>
+              <a href="#main">SOBRE NÓS
+            </li></a>
+            <li>
+              <a href="#footer">CRIAR CONTA
+            </li></a>
+          </ul>
+          <div id="darkModeConteiner">
+            <div id="darkMode" onclick="musica()">
+              <audio autoplay id="musica">
+                <source src="audio/musica.mp3">
+              </audio>
+            </div>
+          </div>
+        </nav>
+      </nav>
+
+          <!----------------------------------------------------------------------->
+
+      <figure id="slide_bar">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </figure>
+    </header>
+
+          <!----------------------------------------------------------------------->
+          <!----------------------------------------------------------------------->
+
+    <main id="main">
+      <section id="videoConteiner">
+        <section class="titulos">
+          <h2 id="inicio">Intro</h2>
+        </section>
+        <video controls autoplay muted poster="img/planeta.jpg">
+          <source src="videos/video.mp4">
+        </video>
+      </section>
+
+      <!----------------------------------------------------------------------->
+
+      <div id="participantesConteiner">
+        <article>
+          <figure>
+            <img src="img/jardel.jpg" alt="">
+          </figure>
+          <span>JARDEL MOTTA</span>
+        </article>
+
+        <article>
+          <figure>
+            <img src="img/victor.jpeg" alt="">
+          </figure>
+          <span>Victor Souza</span>
+        </article>
+
+        <article>
+          <figure>
+            <img src="img/severo.jpg" alt="">
+          </figure>
+          <span>Leonardo Severo</span>
+        </article>
+      </div>
+
+      <!----------------------------------------------------------------------->
+      
+      <div id="mapaConteiner">
+        <section id="textos">
+          <section>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sobre Nós</h5>
+                <p class="card-text">Somos a equipe com o melhor custo beneficio atuando no mercado de desenvolvedores
+                  de web, contando com uma equipe altamente qualificada e com um atendimento exclusivo para nossos
+                  clientes.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nossa Missão</h5>
+                <p class="card-text">Nossa missão é manter a empresa bem vista na internet, criando um site altamente
+                  intuitivo e de fácil acesso para que os clientes não encontrem nenhuma dificuldade na hora de navegar.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Clientes</h5>
+                <p class="card-text">A Wild Bears conta com um grande portfólio de clientes, muito deles com grandes
+                  nomes no mercado, tais como Nike, Adidas e outros de grande porte.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Curiosidades</h5>
+                <p class="card-text">Uma curiosidade a respeito da Wild Bears é que nós garantimos satisfação do
+                  cliente, sendo que se o cliente não gostar do site ele tem direito a trocar todo o layout sem custo
+                  adicional.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+            <!----------------------------------------------------------------------->
+
+        <section id="mapa">
+          <h2>Nossa Localização:</h2>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.4082362449412!2d-51.22492398488517!3d-30.0251438818893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197909931aaaab%3A0x9ea0b9dcf7a4a29b!2sFAQI%20-%20Faculdades%20QI%20%7C%20Julio%20de%20Castilhos%20%7C%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1616716482041!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+        <!----------------------------------------------------------------------->
+        <!----------------------------------------------------------------------->
+
+    <footer id="footer">
+      <section id="formConteiner">
+        <form>
+          <fieldset>
+            <legend>Ficha de Inscrição</legend>
+            <section class="itensForm">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                <label for="floatingInput">Nome</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Sobrenome">
+                <label for="floatingPassword">Sobrenome</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingPassword">Email</label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="CPF">
+                <label for="floatingInput">CPF</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="RG">
+                <label for="floatingPassword">RG</label>
+              </div>
+              <div class="form-floating">
+                <input type="date" class="form-control" id="floatingInput" placeholder="data">
+                <label for="floatingPassword">Data de Nascimento</label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Escolha o seu País</option>
+                  <option value="1">Brazil</option>
+                  <option value="2">Brasil</option>
+                  <option value="3">Braziu</option>
+                </select>
+                <label for="floatingSelect">Qual o seu País?</label>
+              </div>
+
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Escolha um Estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+                <label for="floatingSelect">Qual o seu Estado?</label>
+              </div>
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Escolha a sua Cidade</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Qual a sua Cidade?</label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Rua">
+                <label for="floatingInput">Rua</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Bairro">
+                <label for="floatingPassword">Bairro</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Numero">
+                <label for="floatingPassword">Número</label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm">
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="Telefone">
+                <label for="floatingInput">Telefone Fixo</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="Celular">
+                <label for="floatingPassword">Celular</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Numero">
+                <label for="floatingPassword">Estado Civil</label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm2">
+              <span>Escolha o seu sexo:</span>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Homem
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Mulher
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Outro
+                </label>
+              </div>
+            </section>
+
+                <!----------------------------------------------------------------------->
+
+            <section class="itensForm2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Aceito os Termos e Condições do Contrato
+                </label>
+              </div>
+              <button type="button" class="btn btn-success">
+                Finalizar Cadastro
+              </button>
+            </section>
+          </fieldset>
+        </form>
+      </section>
+
+                <!----------------------------------------------------------------------->
+
+      <div id="rodape">
+        <section class="divisaoRodapeE">
+          <div id="parteEsquerda"></div>
+          <div id="triangulo-esquerdo">
+            <div id="triangulo-para-baixo"></div>
+            <div id="triangulo-para-cima"></div>
+          </div>
+        </section>
+
+        <!----------------------------------------------------------------------->
+
+        <div class="divisaoRodape">
+          <section>
+            <div>
+              <h4>Nosso Contato</h3>
+                <figure id="contato">
+                  <img src="img/WhatsApp-icone.png" alt="">
+                  <p>4002-8922</p>
+                </figure>
+            </div>
+            <div>
+              <h4>Siga-nos nas redes sociais</h3>
+                <figure>
+                  <img src="img/facebook.png" alt="">
+                  <img src="img/instagram.png" alt="">
+                  <img src="img/twitter.png" alt="" id="twitter">
+                </figure>
+            </div>
+          </section>
+        </div>
+
+        <!----------------------------------------------------------------------->
+
+        <section class="divisaoRodapeD">
+          <section id="triangulo-direito">
+            <div id="triangulo-para-cimaD"></div>
+            <div id="triangulo-para-baixoD"></div>
+          </section>
+          <div id="parteDireita"></div>
+        </section>
+      </div>
+    </footer>
+  </div> <!-- Conteiner -->
+
+    <!----------------------------------------------------------------------->
+    <!----------------------------------------------------------------------->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="halfmoon-1.1.1/js/halfmoon.js"></script>
+  <script type="text/javascript">
+    // Dark mode toggle demo
+    function toggleDemo() {
+      halfmoon.toggleDarkMode();
+    }
+  </script>
+</body>
+
+</html>
